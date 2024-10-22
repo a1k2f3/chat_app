@@ -1,0 +1,75 @@
+.second-container{
+    margin-top: 200px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #a060ff;
+}
+.password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .password input {
+    border: none;
+    border-bottom: 2px solid #00e5e3;
+    margin-right: 30px;
+    width: 270px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+  }
+  
+  .password input::placeholder {
+    font-size: 15px;
+    font-weight: 470;
+  }
+  
+  .invalid input {
+    border-color: red;
+  }
+  
+  .error-msg {
+    color: red;
+  }
+  .second-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .button{  
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .b1 {
+    padding: 5px 0;
+    background-color: #a060ff;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 180px;
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+.toggle-password {
+    cursor: pointer;
+  }
+  

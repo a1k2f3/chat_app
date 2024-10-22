@@ -1,0 +1,73 @@
+/* Help.css */
+
+.help-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Maximum width for smaller screens */
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .help-content {
+    text-align: center; /* Horizontal alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical alignment */
+    align-items: center; /* Vertical alignment */
+  }
+  
+  .close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10%;
+    background-color: #a060ff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #00e5e3;
+  }
+  
+  /* Media queries for different screen sizes */
+
+  @media screen and (max-width: 576px) {
+    .help-container {
+        position: absolute;
+        left: 50%;
+        right: 50%;
+      width: 90%; /* This width for small screens.*/
+      max-width: 300px; 
+    }
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .help-container {
+      width: 70%; 
+      max-width: 400px; 
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .help-container {
+      width: 60%; /* Adjust width for medium screens. */
+      max-width: 500px; /* Maximum width for medium screens. */
+    }
+  }
+  
+  @media screen and (min-width: 993px) {
+    .help-container {
+        height: 367px;
+      width: 50%; /* Adjust width for large screens. */
+      max-width: 500px; /* Maximum width for large screens. */
+    }
+  }

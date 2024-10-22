@@ -1,0 +1,147 @@
+
+.image-container{
+    margin: 0 20px; /*30px*/
+     padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.image-container img {  
+    height: 140px;
+    width:125px;
+    border-radius: 90%; 
+    /* background-color: #00e5e3; */
+    overflow: hidden;
+  }
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+.text{
+    color: #a060ff;
+    font-weight: 650;
+    font-size: 44px;
+}
+.inputfields{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputfields .username input{
+    border: none ;
+    outline: none;
+}
+#nam{
+    border: none;
+    border-bottom: 2px solid #00e5e3;
+    margin-top: 5px;
+    /* margin-right: 20px; */
+    width: 270px;
+    padding: 5px;
+    font-size: 15px;
+}
+#nam::placeholder{
+    font-size: 14px; 
+    font-weight: 470;
+}
+svg {
+    margin-left: 10px;
+    width: 20px;
+    opacity: 0.5;
+}
+
+#password {
+    margin-left: 30px;
+    border: none;
+    border-bottom: 2px solid #00e5e3;
+    margin-right: "30px";
+    width: 270px;
+    padding: 5px;
+    font-size: 15px;
+}
+#password::placeholder{
+    font-size: 14px; 
+    font-weight: 470;
+}
+.password{
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.password input{
+    outline: none;
+    border: none;
+}
+
+.forget-password{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+font-size: 17px;
+}
+.forget-password span{
+    padding-left: 8px;
+    color: #a060ff;
+    font-weight: 495 ;
+    font-size: 15px;
+}
+.forget-password a{
+    text-decoration: none;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.button{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  }
+.b1 {
+    padding: 5px 0;
+    background-color: #a060ff;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 160px;
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+.b2 {
+    padding: 5px 0;
+    background-color: #a060ff;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 160px;
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+
+.b1:hover{
+    background-color: #00e5e3;
+  }
+  .b2:hover{
+    background-color: #00e5e3;
+  }
+
+/* Media queries for mobile screen */
+
+  /* @media (min-width: 760px) and (max-width: 1030px),
+       (min-height: 1020px) and (max-height: 1370px) {
+  
+} */

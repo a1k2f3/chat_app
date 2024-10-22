@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image-container{
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    height: 150px;
+    width: 220px;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content h2{
+   
+    font-size: 30px;
+    /* color:#a060ff; */
+    /* color: black; */
+    color: #9f60ff;
+}
+.content p{
+    margin-top:10px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    font-size: 18px;
+    font-weight: 470;
+}
+.content h6{
+    margin-top:10px ;
+    font-size: 14px;
+    font-weight: 400;
+}
+.services{
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services p{
+    font-size: 12px;
+}
+.services p span{
+    color: #37edf7;
+}
+.services p .margin{
+    margin-left: 45px;
+}
+.button{
+    margin-top: 10px;
+    /* padding-left: 1000px; */
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  .button1{
+     padding: 5px 95px;
+     border-radius: 25px;
+     /* background-color:#019171; */
+     background-color: #9f60ff;
+     color: white;
+     font-weight:490;
+     border: 2px solid white;
+  }
+  .button1:hover{
+    background-color: #00e5e3;
+  }
+
+  
+
+  /* media queries for different screens */
+  
+/* CSS for devices with a width between 390px to 440px or a height between 840px to 920px */
+@media (min-width: 390px) and (max-width: 440px),
+(min-height: 840px) and (max-height: 930px) {
+    .content h6{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .content p{
+        
+        font-size: 17px;
+        font-weight: 470;
+    }
+    .services p{
+        font-size: 12px;
+    }
+    .services{
+        margin-bottom: 60px;
+    }
+}

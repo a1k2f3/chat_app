@@ -1,0 +1,134 @@
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content h2{
+    color: #a060ff;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+.content p{
+    font-size: 16px;
+}
+
+img {
+
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.img-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+.inputfields{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputfields .username input{
+    border: none ;
+    outline: none;
+}
+#nam{
+    border: none;
+    border-bottom: 2px solid #00e5e3;
+    margin-top: 5px;
+    /* margin-right: 20px; */
+    margin-left: 40px;
+    width: 270px;
+    padding: 5px;
+    font-size: 15px;
+}
+#nam::placeholder{
+    font-size: 14px; 
+    font-weight: 470;
+}
+svg {
+    margin-left: 10px;
+    width: 20px;
+    opacity: 0.5;
+}
+
+#password {
+    border: none;
+    border-bottom: 2px solid #00e5e3;
+    margin-top: 5px;
+    margin-right: "30px";
+    width: 270px;
+    padding: 5px;
+    font-size: 15px;
+}
+#password::placeholder{
+    font-size: 14px; 
+    font-weight: 470;
+}
+.password{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
+.password input{
+    outline: none;
+    border: none;
+}
+.img {
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.button{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  }
+.b {
+    background-color: #a060ff;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 450;
+    width: 130px;
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+
+.b:hover{
+    background-color: #00e5e3;
+  }
+
+
+  /* media queries for different screens */
+  
+/* CSS for devices with a width between 390px to 440px or a height between 840px to 920px */
+@media (min-width: 390px) and (max-width: 440px),
+(min-height: 840px) and (max-height: 930px) {
+    .img-input{
+        margin-left: 80px;
+    }
+    .content h2{
+        font-size: 38px;
+    }
+    .content p{
+        font-size: 15px;
+        padding-left: 100px;
+    }
+    .inputfields{
+        margin-bottom: 180px;
+    }
+}
