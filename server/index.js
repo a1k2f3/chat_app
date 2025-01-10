@@ -48,54 +48,54 @@ app.post('/unity_chat', (req, res) => {
       return res.json(data);
   });
 });
-app.post('/user_s', (req, res) => {
-  const sqlquery = " select*from user_s where  `user_name`=? and `user_password`=? ";
-  // ,country_code,user_num
-  const values = [
-    req.body.user_name,
-    req.body.user_password,
-       ];
-  db.query(sqlquery, values, (err, data) => {
-      if (err) {
-          console.error("Error executing query", err);
-          return res.status(500).json(err);
-      }
-      return res.json(data);
-  });
-});
+// app.post('/user_s', (req, res) => {
+//   const sqlquery = " select*from user_s where  `user_name`=? and `user_password`=? ";
+//   // ,country_code,user_num
+//   const values = [
+//     req.body.user_name,
+//     req.body.user_password,
+//        ];
+//   db.query(sqlquery, values, (err, data) => {
+//       if (err) {
+//           console.error("Error executing query", err);
+//           return res.status(500).json(err);
+//       }
+//       return res.json(data);
+//   });
+// });
 app.get("/numbers", (req, res) => {
   res.send("helloword");
 });
-app.post('/numbers', (req, res) => {
-  const sqlquery = "INSERT INTO  numbers( user_num ,country_code )Values(?,?)";
+// app.post('/numbers', (req, res) => {
+//   const sqlquery = "INSERT INTO  numbers( user_num ,country_code )Values(?,?)";
  
-  const values = [
+//   const values = [
     
-    req.body.user_num,
-    req.body.country_code
-       ];
-  db.query(sqlquery, values, (err, data) => {
-      if (err) {
-          console.error("Error executing query", err);
-          return res.status(500).json(err);
-      }
-      return res.json(data);
-  });
-});
-app.post('/message', (req, res) => {
-  const sqlquery = "INSERT INTO  message(  user_message )Values(?)";
+//     req.body.user_num,
+//     req.body.country_code
+//        ];
+//   db.query(sqlquery, values, (err, data) => {
+//       if (err) {
+//           console.error("Error executing query", err);
+//           return res.status(500).json(err);
+//       }
+//       return res.json(data);
+//   });
+// });
+// app.post('/message', (req, res) => {
+//   const sqlquery = "INSERT INTO  message(  user_message )Values(?)";
 
-  const values = [    
-    req.body.user_message,
-       ];
-  db.query(sqlquery, values, (err, data) => {
-      if (err) {
-          console.error("Error executing query", err);
-          return res.status(500).json(err);
-      }
-      return res.json(data);
-  });
-});
+//   const values = [    
+//     req.body.user_message,
+//        ];
+//   db.query(sqlquery, values, (err, data) => {
+//       if (err) {
+//           console.error("Error executing query", err);
+//           return res.status(500).json(err);
+//       }
+//       return res.json(data);
+//   });
+// });
 
 app.get('/message', (req, res) => {
   const sqlquery = "select*from  message";
